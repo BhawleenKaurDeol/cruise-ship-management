@@ -1,4 +1,109 @@
-# cruise-ship-management
+# 🛳️ Cruise Ship Management System
+
+A full-stack web application built to digitize the voyage experience on cruise ships. It enables voyagers to order catering/stationery, book services, and empowers crew members to manage operations efficiently through role-specific dashboards.
+
+> ✅ Built using **HTML, CSS, JavaScript, Firebase Auth, and Firestore**
+
+---
+
+## 🚀 Features by Role
+
+### 👤 Voyager
+
+- Sign up / Login using Firebase Auth
+- Order catering (snacks, beverages, etc.)
+- Order stationery (books, gifts, etc.)
+- Book:
+  - 🎬 Movie tickets (with seat selection)
+  - 💇 Beauty salon services
+  - 🏋️ Fitness equipment (with time slot)
+  - 🎉 Party halls (with type: wedding, birthday, etc.)
+- Logs actions to Firestore
+- Logout and session persistence
+
+### 🛠️ Admin
+
+- Login with Firebase Auth (role-based)
+- Add / Edit / Delete:
+  - Catering Items
+  - Stationery Items
+  - Movies
+  - Fitness Equipment
+  - Party Hall Types
+- Manage Voyager registration (optional)
+
+### 🧑‍💼 Manager
+
+- View all bookings:
+  - Movies
+  - Salon
+  - Fitness
+  - Party Hall
+
+### 👨‍🍳 Head-Cook
+
+- View catering orders
+
+### 📦 Supervisor
+
+- View stationery orders
+
+---
+
+## 🔐 Firebase Collections
+
+| Collection          | Purpose                         |
+| ------------------- | ------------------------------- |
+| `users`             | Voyager and role-based accounts |
+| `orders_catering`   | Catering orders                 |
+| `orders_stationery` | Stationery orders               |
+| `bookings_movies`   | Movie ticket bookings           |
+| `bookings_salon`    | Salon service bookings          |
+| `bookings_fitness`  | Fitness equipment bookings      |
+| `bookings_party`    | Party hall bookings             |
+| `menu_catering`     | Admin-defined catering items    |
+| `menu_stationery`   | Admin-defined stationery items  |
+| `menu_movies`       | Movie list                      |
+| `menu_fitness`      | Equipment list                  |
+| `menu_partyhall`    | Party hall types                |
+| `logs`              | Action logs with timestamps     |
+
+---
+
+## 💻 Tech Stack
+
+| Layer           | Tech                           |
+| --------------- | ------------------------------ |
+| Frontend        | HTML, CSS, JS                  |
+| Authentication  | Firebase Auth                  |
+| Database        | Firebase Firestore             |
+| Hosting         | Firebase Hosting _(or Vercel)_ |
+| Logging         | Firestore-based, centralized   |
+| Version Control | Git + GitHub (public repo)     |
+
+---
+
+## 📁 Project Structure
+
+/public
+├── index.html
+├── admin.html
+├── voyager.html
+├── manager.html
+├── headcook.html
+├── supervisor.html
+└── css/style.css
+
+/js
+├── firebase-config.js
+├── voyager.js
+├── admin.js
+├── manager.js
+├── headcook.js
+├── supervisor.js
+├── logAction.js
+
+README.md
 
 ## ✅ Testing & Optimization
 
