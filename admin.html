@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Welcome, Admin</h2>
+    <p>This dashboard is for managing items & bookings.</p>
+
+    <div id="admin-options">
+      <!-- Catering Items Section -->
+      <div id="catering-section">
+        <h3>Catering Items</h3>
+
+        <input
+          type="text"
+          id="new-catering-item"
+          placeholder="Enter item name"
+        />
+        <button id="add-catering-btn">Add Item</button>
+
+        <ul id="catering-items-list"></ul>
+      </div>
+
+      <!-- Stationery Items Section -->
+      <div id="stationery-section">
+        <h3>Stationery Items</h3>
+
+        <input
+          type="text"
+          id="new-stationery-item"
+          placeholder="Enter item name"
+        />
+        <button id="add-stationery-btn">Add Item</button>
+
+        <ul id="stationery-items-list"></ul>
+      </div>
+
+      <!-- Movie Management Section -->
+      <div id="movie-section">
+        <h3>Movies</h3>
+
+        <input type="text" id="new-movie-name" placeholder="Enter movie name" />
+        <button id="add-movie-btn">Add Movie</button>
+
+        <ul id="movie-list"></ul>
+      </div>
+
+      <!-- Fitness Equipment Management -->
+      <div id="fitness-section">
+        <h3>Fitness Equipment</h3>
+
+        <input
+          type="text"
+          id="new-fitness-item"
+          placeholder="Enter equipment name"
+        />
+        <button id="add-fitness-btn">Add Equipment</button>
+
+        <ul id="fitness-list"></ul>
+      </div>
+
+      <!-- Party Hall Type Management -->
+      <div id="partyhall-section">
+        <h3>Party Hall Types</h3>
+
+        <input
+          type="text"
+          id="new-partyhall-type"
+          placeholder="Enter hall type"
+        />
+        <button id="add-partyhall-btn">Add Type</button>
+
+        <ul id="partyhall-list"></ul>
+      </div>
+    </div>
+
+    <button id="logout-btn">Logout</button>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

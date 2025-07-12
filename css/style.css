@@ -1,0 +1,38 @@
+body{
+  justify-items: center;
+  font-family: sans-serif;
+}
+
+#voyager-dashboard {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+#order-options, #booking-options {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #2d89e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c5f9e;
+}
+
+#logout-btn, #logout-btn-admin{
+  display: grid;
+
+  justify-items: center;
+}

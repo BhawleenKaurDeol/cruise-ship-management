@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruise Ship Management</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Cruise Ship Management System</h1>
+
+    <!-- Sign Up Form -->
+    <div id="signup-section">
+      <h2>Voyager Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password" />
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+      <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Voyager Dashboard -->
+    <div id="voyager-dashboard" style="display: none">
+      <h2>Welcome, Voyager!</h2>
+      <p>Select a service below:</p>
+
+      <!-- Order Sections -->
+      <div id="order-options">
+        <button id="order-catering-btn">Order Catering Items</button>
+        <button id="order-stationery-btn">Order Stationery Items</button>
+      </div>
+
+      <!-- Booking Sections (Day 3) -->
+      <div id="booking-options">
+        <button id="book-movie-btn">Book Movie Tickets</button>
+        <button id="book-salon-btn">Book Beauty Salon</button>
+        <button id="book-fitness-btn">Book Fitness Center</button>
+        <button id="book-party-btn">Book Party Hall</button>
+      </div>
+
+      <!-- Logout -->
+      <button id="logout-btn">Logout</button>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-dashboard" style="display: none">
+      <h2>Welcome Admin</h2>
+      <p>You can manage menu and user data.</p>
+      <button id="logout-btn-admin">Logout</button>
+    </div>
+
+    <!-- Firebase + Scripts -->
+    <!-- Firebase v9+ (compat version) - for direct browser use -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/logAction.js"></script>
+  </body>
+</html>

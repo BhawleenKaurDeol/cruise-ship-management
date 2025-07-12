@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Welcome, Manager</h2>
+
+    <div>
+      <h3>Movie Bookings</h3>
+      <ul id="movie-bookings-list"></ul>
+    </div>
+
+    <div>
+      <h3>Salon Bookings</h3>
+      <ul id="salon-bookings-list"></ul>
+    </div>
+
+    <div>
+      <h3>Fitness Bookings</h3>
+      <ul id="fitness-bookings-list"></ul>
+    </div>
+
+    <div>
+      <h3>Party Hall Bookings</h3>
+      <ul id="party-bookings-list"></ul>
+    </div>
+
+    <button id="logout-btn">Logout</button>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/manager.js"></script>
+  </body>
+</html>

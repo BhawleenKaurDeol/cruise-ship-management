@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Voyager Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>Welcome, Voyager!</h2>
+    <p>Select a service below:</p>
+
+    <div id="order-options">
+      <button id="order-catering-btn">Order Catering Items</button>
+      <button id="order-stationery-btn">Order Stationery Items</button>
+      <button id="book-movie-btn">Book Movie Tickets</button>
+      <button id="book-salon-btn">Book Beauty Salon</button>
+      <button id="book-fitness-btn">Book Fitness Center</button>
+      <button id="book-party-btn">Book Party Hall</button>
+    </div>
+
+    <!-- catering-form -->
+
+    <div id="catering-form" style="display: none">
+      <h3>Order Catering Items</h3>
+      <label><input type="checkbox" value="Snacks" /> Snacks</label><br />
+      <label><input type="checkbox" value="Beverages" /> Beverages</label><br />
+      <label><input type="checkbox" value="Desserts" /> Desserts</label><br />
+      <label><input type="checkbox" value="Main Course" /> Main Course</label
+      ><br />
+      <button id="submit-catering-order">Place Order</button>
+    </div>
+
+    <!-- Stationery Order Form -->
+    <div id="stationery-form" style="display: none; margin-top: 20px">
+      <h3>Order Stationery Items</h3>
+
+      <label><input type="checkbox" value="Gift Items" /> Gift Items</label
+      ><br />
+      <label><input type="checkbox" value="Chocolates" /> Chocolates</label
+      ><br />
+      <label><input type="checkbox" value="Tale Books" /> Tale Books</label
+      ><br />
+      <label><input type="checkbox" value="Cards" /> Cards</label><br />
+
+      <button id="submit-stationery-order">Place Order</button>
+    </div>
+
+    <!-- Movie Booking Form -->
+    <div id="movie-booking-form" style="display: none; margin-top: 20px">
+      <h3>Book a Movie Ticket</h3>
+
+      <label for="movie-select">Select a Movie:</label>
+      <select id="movie-select">
+        <option value="Avatar">Avatar</option>
+        <option value="Inception">Inception</option>
+        <option value="The Lion King">The Lion King</option>
+        <option value="Frozen">Frozen</option></select
+      ><br /><br />
+
+      <label for="seat-number">Seat Number:</label>
+      <input type="text" id="seat-number" placeholder="e.g., A12" /><br /><br />
+
+      <button id="submit-movie-booking">Book Ticket</button>
+    </div>
+
+    <!-- Beauty Salon Booking -->
+    <div id="salon-booking-form" style="display: none; margin-top: 20px">
+      <h3>Book Beauty Salon</h3>
+
+      <label for="salon-service">Select a Service:</label>
+      <select id="salon-service">
+        <option value="Haircut">Haircut</option>
+        <option value="Facial">Facial</option>
+        <option value="Massage">Massage</option>
+        <option value="Manicure/Pedicure">Manicure/Pedicure</option></select
+      ><br /><br />
+
+      <button id="submit-salon-booking">Book Salon</button>
+    </div>
+
+    <!-- Fitness Center Booking -->
+    <div id="fitness-booking-form" style="display: none; margin-top: 20px">
+      <h3>Book Fitness Center</h3>
+
+      <label for="equipment-select">Select Equipment:</label>
+      <select id="equipment-select">
+        <option value="Treadmill">Treadmill</option>
+        <option value="Elliptical">Elliptical</option>
+        <option value="Weights">Weights</option>
+        <option value="Rowing Machine">Rowing Machine</option></select
+      ><br /><br />
+
+      <label for="time-slot">Select Time Slot:</label>
+      <select id="time-slot">
+        <option value="6:00 AM – 7:00 AM">6:00 AM – 7:00 AM</option>
+        <option value="8:00 AM – 9:00 AM">8:00 AM – 9:00 AM</option>
+        <option value="5:00 PM – 6:00 PM">5:00 PM – 6:00 PM</option>
+        <option value="7:00 PM – 8:00 PM">7:00 PM – 8:00 PM</option></select
+      ><br /><br />
+
+      <button id="submit-fitness-booking">Book Slot</button>
+    </div>
+
+    <!-- Party Hall Booking -->
+    <div id="party-hall-form" style="display: none; margin-top: 20px">
+      <h3>Book a Party Hall</h3>
+
+      <label for="party-type">Select Party Type:</label>
+      <select id="party-type">
+        <option value="Birthday Party">Birthday Party</option>
+        <option value="Wedding Party">Wedding Party</option>
+        <option value="Engagement Party">Engagement Party</option>
+        <option value="Business Party">Business Party</option>
+        <option value="Get-Together">Get-Together</option></select
+      ><br /><br />
+
+      <button id="submit-party-booking">Book Hall</button>
+    </div>
+
+    <button id="logout-btn">Logout</button>
+
+    <!-- Firebase & JS -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/voyager.js"></script>
+    <script src="js/logAction.js"></script>
+  </body>
+</html>
